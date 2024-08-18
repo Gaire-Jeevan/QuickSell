@@ -1,8 +1,8 @@
-// import "./App.css";
-import LogInPage from "./pages/LogInPage";
+import "./App.css";
+import SignUpPage from "./pages/SignUpPage";
 
 function App() {
-  return <LogInPage />
+  return <SignUpPage />
 }
 
 export default App;
