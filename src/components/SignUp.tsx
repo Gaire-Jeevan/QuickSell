@@ -69,7 +69,7 @@ const SignUp = () => {
             </div>
             <button
               type="submit"
-              className="bg-[#DF2B4A] rounded-md w-[280px] md:w-[320px] lg:w-[450px] text-white font-medium text-base lg:text-lg h-12  mt-4 lg:mt-10"
+              className="btn btn-success rounded-md w-[280px] md:w-[320px] lg:w-[450px] text-white font-medium text-base lg:text-lg h-12  mt-4 lg:mt-10"
             >
               Sign Up
             </button>

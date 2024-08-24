@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 const HomePage = () => {
   return (
     <div>
-      <NavBar />
+      <NavBar  showFullNav={true}/>
       <HeroSection />
       <FeatueProduct />
       <Guide />

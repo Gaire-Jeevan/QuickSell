@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const LogInPage = () => {
   return (
     <>
-      <NavBar />
+      <NavBar showFullNav={false}/>
       <LogIn />
       <Footer />
     </>

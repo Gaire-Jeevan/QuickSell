@@ -1,8 +1,8 @@
 import "./App.css";
-import SignUpPage from "./pages/SignUpPage";
+import AddEditProductPage from "./pages/AddEditProductPage";
 
 function App() {
-  return <SignUpPage />
+  return <AddEditProductPage />;
 }
 
 export default App;

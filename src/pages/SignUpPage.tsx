@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const SignUpPage = () => {
   return (
     <>
-      <NavBar />
+      <NavBar  showFullNav={false}/>
       <SignUp />
       <Footer />
     </>
