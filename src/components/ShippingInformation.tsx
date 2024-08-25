@@ -2,12 +2,12 @@ import React from "react";
 
 const ShippingInformation = () => {
   return (
-    <div className="m-2 xl:w-[700px]">
-      <h3 className="font-medium text-md mt-2 ml-2 pt-3">Shipping Information</h3>
+    <div className="m-2 lg:w-[495px] xl:w-[680px]">
+      <h3 className="font-medium text-xl mt-5 mb-4 ml-4 pt-3">Shipping Information</h3>
       <div className="shadow-md mr-2 ml-2 mt-2 mb-2lg:mr-0 p-4 bg-[#f9f9fa]">
         <form action="" className="space-y-3">
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name" className="mb-2">Name</label>
             <input
               type="text"
               className="form-control"
@@ -18,7 +18,7 @@ const ShippingInformation = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="name">Email</label>
+            <label htmlFor="name" className="mb-2">Email</label>
             <input
               type="email"
               className="form-control"
@@ -29,7 +29,7 @@ const ShippingInformation = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="phoneNumber">Phone Number</label>
+            <label htmlFor="phoneNumber" className="mb-2">Phone Number</label>
             <input
               type="tel"
               className="form-control"
@@ -41,7 +41,7 @@ const ShippingInformation = () => {
           <div className="flex justify-between">
             <div>
               <div className="form-group">
-                <label htmlFor="city">City</label>
+                <label htmlFor="city" className="mb-2">City</label>
                 <input
                   type="text"
                   className="form-control"
@@ -53,7 +53,7 @@ const ShippingInformation = () => {
             </div>
             <div>
               <div className="form-group">
-                <label htmlFor="state">State</label>
+                <label htmlFor="state" className="mb-2">State</label>
                 <input
                   type="text"
                   className="form-control"
@@ -68,7 +68,7 @@ const ShippingInformation = () => {
           <div className="flex justify-between">
             <div>
               <div className="form-group">
-                <label htmlFor="city">Zip</label>
+                <label htmlFor="city" className="mb-2">Zip</label>
                 <input
                   type="text"
                   className="form-control"
@@ -80,7 +80,7 @@ const ShippingInformation = () => {
             </div>
             <div>
               <div className="form-group">
-                <label htmlFor="state">Country</label>
+                <label htmlFor="state" className="mb-2">Country</label>
                 <input
                   type="text"
                   className="form-control"
