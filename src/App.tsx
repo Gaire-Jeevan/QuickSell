@@ -1,8 +1,8 @@
 import "./App.css";
-import AddEditProductPage from "./pages/AddEditProductPage";
+import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
-  return <AddEditProductPage />;
+  return <CheckoutPage />;
 }
 
 export default App;
