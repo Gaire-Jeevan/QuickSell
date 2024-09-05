@@ -1,5 +1,4 @@
 import EditProfile from "../components/EditProfile";
-import ListedProduct from "../components/ListedProduct";
 import NavBar from "../components/NavBar";
 import PastOrder from "../components/PastOrder";
 import ProfileSummary from "../components/ProfileSummary";
@@ -18,7 +17,7 @@ const UserProfilePage = () => {
         </div>
         <PastOrder />
         <Reviews />
-        <ListedProduct />
+        
       </div>
     </>
   );
