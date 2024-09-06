@@ -1,7 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const LogIn = () => {
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const navigate = useNavigate();
+
+  const loginHandler = async (e: any) => {
+    e.preventDefault();
+    console.log(email, password);
+    const URL = "http://localhost:8080/api/user/login";
+    axios
+      .post(URL, {
+        email,
+        password,
+      })
+      .then((res) => {
+        console.log(res.data);
+        navigate("/dashboard");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <div className="flex justify-center items-center">
       <div className="m-4">
@@ -10,20 +33,21 @@ const LogIn = () => {
             Log In
           </h2>
           <form
-            action=""
+            onSubmit={loginHandler}
             className="flex flex-col justify-center items-center "
           >
             <div className="form-group mt-4 lg:mt-10 mb-3 text-sm lg:text-lg">
               <label htmlFor="username" className="text-base font-medium mb-2">
-                Email Address or Phone Number
+                Email Address
               </label>
               <input
                 type="email"
                 className="form-control rouded-md  w-[280px] h-12 lg:w-[400] text-sm"
-                id="username"
                 maxLength={100}
                 aria-describedby="emailHelp"
-                placeholder="Enter your email or phone number"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="form-group text-sm lg:text-lg">
@@ -35,6 +59,8 @@ const LogIn = () => {
                 className="form-control rounded-md  w-[280px] h-12 lg:w-[400] text-sm"
                 id="password"
                 maxLength={100}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter your password"
               />
             </div>
