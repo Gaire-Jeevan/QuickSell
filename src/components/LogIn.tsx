@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const LogIn = () => {
   const [email, setEmail] = useState<string>("");
@@ -37,11 +37,12 @@ const LogIn = () => {
             className="flex flex-col justify-center items-center "
           >
             <div className="form-group mt-4 lg:mt-10 mb-3 text-sm lg:text-lg">
-              <label htmlFor="username" className="text-base font-medium mb-2">
+              <label htmlFor="email" className="text-base font-medium mb-2">
                 Email Address
               </label>
               <input
                 type="email"
+                id="email"
                 className="form-control rouded-md  w-[280px] h-12 lg:w-[400] text-sm"
                 maxLength={100}
                 aria-describedby="emailHelp"
@@ -56,8 +57,9 @@ const LogIn = () => {
               </label>
               <input
                 type="password"
-                className="form-control rounded-md  w-[280px] h-12 lg:w-[400] text-sm"
                 id="password"
+                className="form-control rounded-md  w-[280px] h-12 lg:w-[400] text-sm"
+                
                 maxLength={100}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
