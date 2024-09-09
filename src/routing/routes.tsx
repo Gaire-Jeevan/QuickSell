@@ -6,6 +6,7 @@ import SignUpPage from "../pages/SignUpPage";
 import ContactUsPage from "../pages/ContactUsPage";
 import UserDashboardPage from "../pages/UserDashboardPage";
 import ErrorPage from "./ErrorPage";
+import AllProductPage from "../pages/AllProductPage";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
   { path: "/sell", element: <AddEditProduct /> },
   { path: "/contactUs", element: <ContactUsPage /> },
   { path: "/dashboard", element: <UserDashboardPage /> },
+  { path: "/browseProduct", element: <AllProductPage /> },
 ]);
 
 export default router;
