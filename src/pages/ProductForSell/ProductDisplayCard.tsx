@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa";
-import sofaSet from "../assets/sofaSet.png";
+import sofaSet from "../../assets/sofaSet.png"
 
 interface Props {
   name: string;

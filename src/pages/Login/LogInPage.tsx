@@ -1,8 +1,6 @@
-import React from "react";
-import NavBar from "../components/NavBar";
-import LogIn from "../components/LogIn";
-import Footer from "../components/Footer";
-
+import Footer from "../../components/Footer";
+import NavBar from "../../components/NavBar";
+import LogIn from "./LogIn";
 const LogInPage = () => {
   return (
     <>

@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import Cookies from "universal-cookie";
 import { Link, useNavigate } from "react-router-dom";
-import { fetchProfile } from "../utils/API";
+import { fetchProfile } from "../../utils/API";
 
 const LogIn = () => {
   const [email, setEmail] = useState<string>("");

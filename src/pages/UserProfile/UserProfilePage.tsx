@@ -1,8 +1,8 @@
-import EditProfile from "../components/EditProfile";
-import NavBar from "../components/NavBar";
-import PastOrder from "../components/PastOrder";
-import ProfileSummary from "../components/ProfileSummary";
-import Reviews from "../components/Reviews";
+import EditProfile from "./EditProfile";
+import NavBar from "../../components/NavBar";
+import PastOrder from "./PastOrder";
+import ProfileSummary from "./ProfileSummary";
+import Reviews from "./Reviews";
 
 const UserProfilePage = () => {
   return (
@@ -17,7 +17,6 @@ const UserProfilePage = () => {
         </div>
         <PastOrder />
         <Reviews />
-        
       </div>
     </>
   );

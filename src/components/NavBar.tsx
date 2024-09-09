@@ -4,11 +4,12 @@ interface Props {
   showFullNav: boolean;
 }
 
+
 const NavBar = ({ showFullNav }: Props) => {
   return (
     <>
       <div className="flex flex-row justify-between items-center mx-4 my-2">
-        <Link to="/" className="text-lg font-bold">QuickSell</Link>
+        <Link to="/" className="text-2xl font-bold">QuickSell</Link>
 
         {showFullNav && (
           <>
@@ -24,7 +25,7 @@ const NavBar = ({ showFullNav }: Props) => {
               <Link to="/contactUs" className="list-item hover:underline font-bold">Contact Us</Link>
             </ul>
 
-            <div className="flex w-44 justify-between">
+            <div className="flex w-44 justify-between ">
               <Link to="/signup" className="btn btn-success m-0 h-auto">Sign Up</Link>
               <Link to="/login" className="btn btn-primary h-auto">Log In</Link>
             </div>

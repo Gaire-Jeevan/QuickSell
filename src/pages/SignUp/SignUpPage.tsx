@@ -1,5 +1,6 @@
-import NavBar from "../components/NavBar";
-import SignUp from "../components/SignUp";
+import NavBar from "../../components/NavBar";
+import SignUp from "./SignUp";
+
 
 const SignUpPage = () => {
   return (

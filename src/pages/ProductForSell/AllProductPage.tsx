@@ -1,5 +1,5 @@
-import GetProduct from "../components/GetProduct";
-import NavBar from "../components/NavBar";
+import GetProduct from "./GetProduct";
+import NavBar from "../../components/NavBar";
 
 const AllProductPage = () => {
   return (

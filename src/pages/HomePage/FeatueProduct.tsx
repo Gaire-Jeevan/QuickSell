@@ -1,5 +1,6 @@
+import ProductCard from "../../components/ProductCard";
 
-import ProductCard from "./ProductCard";
+
 
 const FeatueProduct = () => {
   return (
