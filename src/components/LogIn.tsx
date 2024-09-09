@@ -1,16 +1,21 @@
 import axios from "axios";
 import { useState } from "react";
+import Cookies from "universal-cookie";
 import { Link, useNavigate } from "react-router-dom";
+import { fetchProfile } from "../utils/API";
 
 const LogIn = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+
+  const cookies = new Cookies(); // Initialize cookies
   const navigate = useNavigate();
 
   const loginHandler = async (e: any) => {
     e.preventDefault();
     console.log(email, password);
     const URL = "http://localhost:8080/api/user/login";
+
     axios
       .post(URL, {
         email,
@@ -18,10 +23,30 @@ const LogIn = () => {
       })
       .then((res) => {
         console.log(res.data);
+
+        // Store the token in cookies
+        cookies.set("jwt_authorization", res.data, {
+          path: "/", // Cookie is accessible throughout the app
+          expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000), // Expire in 8 hours
+          secure: true, // Set to true in production if using HTTPS
+          sameSite: "lax", // Helps with CSRF protection
+        });
+        fetchProfile(res.data).then((profile) => {
+          console.log(profile);
+
+          cookies.set("profile", profile, {
+            path: "/", // Cookie is accessible throughout the app
+            expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000), // Expire in 8 hours
+            secure: true, // Set to true in production if using HTTPS
+            sameSite: "lax", // Helps with CSRF protection
+          });
+        });
+        // Navigate to the dashboard after successful login
         navigate("/dashboard");
       })
       .catch((err) => {
         console.log(err);
+        return;
       });
   };
 
@@ -51,6 +76,7 @@ const LogIn = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
+
             <div className="form-group text-sm lg:text-lg">
               <label htmlFor="password" className="text-base font-medium mb-2">
                 Password
@@ -59,7 +85,6 @@ const LogIn = () => {
                 type="password"
                 id="password"
                 className="form-control rounded-md  w-[280px] h-12 lg:w-[400] text-sm"
-                
                 maxLength={100}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
