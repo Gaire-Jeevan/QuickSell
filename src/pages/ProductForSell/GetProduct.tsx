@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { getAllProducts } from "../../utils/API";
+import { useEffect, useState } from "react";
 import Cookies from "universal-cookie";
+import { getAllProducts } from "../../utils/API";
 import ProductDisplayCard from "./ProductDisplayCard";
 
 interface Product {
@@ -15,7 +15,7 @@ const GetProduct = () => {
 
   useEffect(() => {
     const profile = cookies.get("profile");
-    console.log(profile.id);
+    // console.log(profile.id);
     getAllProducts(cookies.get("jwt_authorization"), profile.id)
       .then((products) => {
         console.log(products);

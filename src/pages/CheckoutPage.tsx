@@ -1,4 +1,3 @@
-import React from "react";
 import NavBar from "../components/NavBar";
 import OrderSummary from "../components/OrderSummary";
 import ShippingInformation from "../components/ShippingInformation";

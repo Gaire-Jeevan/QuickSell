@@ -1,5 +1,5 @@
-import { CiSearch, CiUser } from "react-icons/ci";
-import { FaBars, FaListUl, FaRegUser } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
+import { FaListUl, FaRegUser } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
 import { RiFocus3Line } from "react-icons/ri";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import sofaset from "../assets/sofaSet.png";
 
 const PastOrder = () => {

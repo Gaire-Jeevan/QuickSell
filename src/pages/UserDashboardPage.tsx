@@ -1,10 +1,9 @@
-import React from "react";
+import NavBar from "../components/NavBar";
+import NewMessages from "./userDashboard/NewMessages";
+import ProductListing from "./userDashboard/ProductListing";
 import RecentPurchases from "./userDashboard/RecentPurchases";
 import RecentSales from "./userDashboard/RecentSales";
-import NewMessages from "./userDashboard/NewMessages";
 import TransactionHistory from "./userDashboard/TransactionHistory";
-import ProductListing from "./userDashboard/ProductListing";
-import NavBar from "../components/NavBar";
 
 const UserDashboardPage = () => {
   return (

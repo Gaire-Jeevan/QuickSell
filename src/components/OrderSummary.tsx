@@ -1,4 +1,3 @@
-import React from "react";
 import sofaSet from "../assets/sofaSet.png";
 
 const OrderSummary = () => {
