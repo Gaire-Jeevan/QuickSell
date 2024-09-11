@@ -15,7 +15,7 @@ const GetProduct = () => {
 
   useEffect(() => {
     const profile = cookies.get("profile");
-    // console.log(profile.id);
+    console.log(profile.id);
     getAllProducts(cookies.get("jwt_authorization"), profile.id)
       .then((products) => {
         console.log(products);

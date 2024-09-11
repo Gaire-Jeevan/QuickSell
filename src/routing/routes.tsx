@@ -7,6 +7,7 @@ import ErrorPage from "./ErrorPage";
 import AllProductPage from "../pages/ProductForSell/AllProductPage";
 import LogInPage from "../pages/Login/LogInPage";
 import SignUpPage from "../pages/SignUp/SignUpPage";
+import UserProfilePage from "../pages/UserProfile/UserProfilePage";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
   { path: "/contactUs", element: <ContactUsPage /> },
   { path: "/dashboard", element: <UserDashboardPage /> },
   { path: "/browseProduct", element: <AllProductPage /> },
+  { path: "/profile", element: <UserProfilePage /> },
 ]);
 
 export default router;

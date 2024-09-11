@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import LogIn from "./LogIn";
 const LogInPage = () => {
@@ -6,7 +5,6 @@ const LogInPage = () => {
     <>
       <NavBar showFullNav={false}/>
       <LogIn />
-      <Footer />
     </>
   );
 };
