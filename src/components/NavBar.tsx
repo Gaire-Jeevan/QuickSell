@@ -37,7 +37,7 @@ const NavBar = ({ showFullNav }: Props) => {
 
   return (
     <>
-      <div className="flex flex-row justify-between items-center mx-4 my-2">
+      <div className="flex flex-row justify-between items-center mx-4 mt-2">
         <Link to="/" className="text-2xl font-bold">
           <img src={logo} alt="QuickSellLogo" className="w-[140px] h-24" />
         </Link>

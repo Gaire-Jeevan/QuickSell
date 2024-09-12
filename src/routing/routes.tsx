@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import AddEditProduct from "../pages/AddEditProduct/AddEditProduct";
-import HomePage from "../pages/HomePage/HomePage";
 import ContactUsPage from "../pages/ContactUs/ContactUsPage";
-import UserDashboardPage from "../pages/UserDashboardPage";
-import ErrorPage from "./ErrorPage";
-import AllProductPage from "../pages/ProductForSell/AllProductPage";
+import HomePage from "../pages/HomePage/HomePage";
 import LogInPage from "../pages/Login/LogInPage";
+import AllProductPage from "../pages/ProductForSell/AllProductPage";
 import SignUpPage from "../pages/SignUp/SignUpPage";
 import UserProfilePage from "../pages/UserProfile/UserProfilePage";
+import UserDashBoardPage from "../pages/userDashboard/UserDashBoardPage";
+import ErrorPage from "./ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   { path: "/home", element: <HomePage /> },
   { path: "/sell", element: <AddEditProduct /> },
   { path: "/contactUs", element: <ContactUsPage /> },
-  { path: "/dashboard", element: <UserDashboardPage /> },
+  { path: "/dashboard", element: <UserDashBoardPage /> },
   { path: "/browseProduct", element: <AllProductPage /> },
   { path: "/profile", element: <UserProfilePage /> },
 ]);
