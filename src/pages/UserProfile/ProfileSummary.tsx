@@ -36,15 +36,17 @@ const ProfileSummary = () => {
   return (
     <div className="mt-4">
       
-      <div className="shadow-md rounded-lg flex mt-3 p-4 bg-[#ffffff]">
-        <img
-          className="w-[70px] h-[70px] rounded-full"
-          src={sofaSet}
-          alt="profile picture of user"
-        />
-        <div className="flex flex-col ml-5">
+      <div className="shadow-md rounded-lg flex flex-col justify-center md:justify-start  items-center md:flex-row mt-3 p-2 md:p-4 bg-[#ffffff]">
+        <div >
+          <img
+            className="w-[70px] h-[70px] rounded-full"
+            src={sofaSet}
+            alt="profile picture of user"
+          />
+        </div>
+        <div className="flex flex-col justify-center  md:items-start items-center ml-5">
           <h4 className="font-medium text-lg">{firstName} {lastName}</h4>
-          <p>{userEmail}</p>
+          <p >{userEmail}</p>
           <p>{countryCode} {phone}</p>
         </div>
       </div>

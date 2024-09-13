@@ -5,8 +5,8 @@ const PaymentMethods = () => {
   return (
     <div className="shadow-lg rounded-lg bg-[#ffffff] p-4">
       <div className="mb-5">
-        <h2 className="font-medium text-3xl">Order History</h2>
-        <p className="text-lg">View your past orders and their status.</p>
+        <h2 className="font-medium text-2xl md:text-3xl">Order History</h2>
+        <p className="md:text-lg">View your past orders and their status.</p>
       </div>
 
       <div>
@@ -18,11 +18,11 @@ const PaymentMethods = () => {
             <FiCreditCard size={30}/>
             </div>
             <div>
-              <p className="text-xl font-medium">Visa ending in 4321</p>
-              <p>Expires 12/24</p>
+              <p className="md:text-xl font-medium">Visa ending in 4321</p>
+              <p className='text-sm'>Expires 12/24</p>
             </div>
         </div>
-        <span className='text-lg font-medium'>Edit</span>
+        <span className='md:text-lg font-medium'>Edit</span>
 
       </div>
 

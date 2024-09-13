@@ -4,8 +4,8 @@ const RecentSales = () => {
   return (
     <div className="mt-5 shadow-lg rounded-lg p-4 bg-[#fff]">
       <div className="mb-5 space-y-1">
-        <h3 className="text-3xl font-bold">Recent Sales</h3>
-        <p className="text-lg">Your latest sales</p>
+        <h3 className="text-xl md:text-3xl font-bold">Recent Sales</h3>
+        <p className="md:text-lg">Your latest sales</p>
       </div>
       <div className="flex flex-col space-y-5">
         <div className="flex justify-between items-center shadow-lg p-3 md:p-4 rounded-lg bg-[#fff]">

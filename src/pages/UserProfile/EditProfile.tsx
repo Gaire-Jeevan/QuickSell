@@ -57,8 +57,8 @@ const EditProfile = () => {
   return (
     <div className="mt-10 shadow-xl p-4 bg-[#ffffff]">
       <div className="mb-10 space-y-1">
-        <h3 className="text-3xl font-bold ">Personal Inforamtion</h3>
-        <p className="text-lg">Update your personal details here.</p>
+        <h3 className="text-2xl md:text-3xl font-bold ">Personal Inforamtion</h3>
+        <p className="md:text-lg">Update your personal details here.</p>
       </div>
       <div className="">
         <form

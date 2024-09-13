@@ -6,8 +6,8 @@ const OrderHistoryPage = () => {
   return (
     <div className="shadow-lg rounded-lg bg-[#ffffff] p-4">
       <div className="mb-5">
-        <h2 className="font-medium text-3xl">Order History</h2>
-        <p className="text-lg">View your past orders and their status.</p>
+        <h2 className="font-medium text-2xl md:text-3xl">Order History</h2>
+        <p className="md:text-lg">View your past orders and their status.</p>
       </div>
 
       <div>

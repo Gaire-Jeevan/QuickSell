@@ -27,13 +27,13 @@ const UserProfilePage = () => {
     <>
       <NavBar showFullNav={false} />
       <div className="m-2 p-3 bg-[#f3f4f6]">
-        <h2 className="text-4xl font-bold">My Profile</h2>
+        <h2 className="text-2xl md:text-4xl font-bold">My Profile</h2>
 
         <div className="my-5">
           <ProfileSummary />
         </div>
         {/* Tab navigations */}
-        <div className="border-b-2 mb-8 flex space-x-10 text-lg">
+        <div className="flex md:space-x-12 md:text-lg mt-5 mb-8">
           <button
             onClick={() => setActiveTab("personal-info")}
             className={`${activeTab === "personal-info" ? "shadow-md rounded-lg p-2 bg-[#ffffff] font-medium" : ""}`}
