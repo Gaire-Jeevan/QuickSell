@@ -17,8 +17,8 @@ export const getAllProducts = async (token:string, userID:string) => {
 }
 
 
-export const getAllOrders = async (token:string, order_id:string) => {
-  const URL = "http://localhost:8080/api/order/user/"+order_id;
+export const getAllOrders = async (token:string, userId:string) => {
+  const URL = "http://localhost:8080/api/order/user/"+userId;
   
   const headers = {
     Authorization: `Bearer ${token}`,
