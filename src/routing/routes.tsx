@@ -8,6 +8,8 @@ import SignUpPage from "../pages/SignUp/SignUpPage";
 import UserProfilePage from "../pages/UserProfile/UserProfilePage";
 import UserDashBoardPage from "../pages/userDashboard/UserDashBoardPage";
 import ErrorPage from "./ErrorPage";
+import ProtectedRoute from "./ProtectedRoute";
+// Import the new ProtectedRoute component
 
 const router = createBrowserRouter([
   {
@@ -17,11 +19,37 @@ const router = createBrowserRouter([
   { path: "/login", element: <LogInPage /> },
   { path: "/signup", element: <SignUpPage /> },
   { path: "/home", element: <HomePage /> },
-  { path: "/sell", element: <AddEditProduct /> },
-  { path: "/contactUs", element: <ContactUsPage /> },
-  { path: "/dashboard", element: <UserDashBoardPage /> },
-  { path: "/browseProduct", element: <AllProductPage /> },
-  { path: "/profile", element: <UserProfilePage /> },
+  {
+    element: <ProtectedRoute />,
+    children: [
+      {
+        path: "profile",
+        element: <UserProfilePage />,
+      },
+
+      {
+        path: "sell",
+        element: <AddEditProduct />,
+      },
+
+      {
+        path: "contactUs",
+        element: <ContactUsPage />,
+      },
+
+      {
+        path: "dashboard",
+        element: <UserDashBoardPage />
+      },
+      {
+        path: "browseProduct",
+        element: <AllProductPage />
+      },
+
+      
+    ],
+  },
+  
 ]);
 
 export default router;

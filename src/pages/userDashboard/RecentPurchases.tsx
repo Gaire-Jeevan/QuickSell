@@ -47,6 +47,7 @@ const RecentPurchases = () => {
       <div>
         {allPurchases?.map((product) => (
           <RecentPurchaseCard
+          key={product.id}
           productName={product.productInfo[0]?.productId || "Unknown Product"}
           price={product.productInfo[0]?.costPrice || 0}
           orderStatus={product.orderStatus}
