@@ -9,6 +9,7 @@ import UserProfilePage from "../pages/UserProfile/UserProfilePage";
 import UserDashBoardPage from "../pages/userDashboard/UserDashBoardPage";
 import ErrorPage from "./ErrorPage";
 import ProtectedRoute from "./ProtectedRoute";
+import ShopingCartPage from "../pages/ShoppigCart/ShopingCartPage";
 // Import the new ProtectedRoute component
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
         path: "browseProduct",
         element: <AllProductPage />
       },
+      {
+        path: "cart",
+        element: <ShopingCartPage />
+      }
 
       
     ],
