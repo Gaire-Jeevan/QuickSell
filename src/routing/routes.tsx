@@ -1,15 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
 import AddEditProduct from "../pages/AddEditProduct/AddEditProduct";
+import CheckoutPage from "../pages/CheckOut/CheckoutPage";
+import Confirmation from "../pages/CheckOut/Confirmation";
+import Payment from "../pages/CheckOut/Payment";
+import Review from "../pages/CheckOut/Review";
+import Shipping from "../pages/CheckOut/Shipping";
 import ContactUsPage from "../pages/ContactUs/ContactUsPage";
 import HomePage from "../pages/HomePage/HomePage";
 import LogInPage from "../pages/Login/LogInPage";
 import AllProductPage from "../pages/ProductForSell/AllProductPage";
+import ShopingCartPage from "../pages/ShoppigCart/ShopingCartPage";
 import SignUpPage from "../pages/SignUp/SignUpPage";
 import UserProfilePage from "../pages/UserProfile/UserProfilePage";
 import UserDashBoardPage from "../pages/userDashboard/UserDashBoardPage";
 import ErrorPage from "./ErrorPage";
 import ProtectedRoute from "./ProtectedRoute";
-import ShopingCartPage from "../pages/ShoppigCart/ShopingCartPage";
 // Import the new ProtectedRoute component
 
 const router = createBrowserRouter([
@@ -40,21 +45,39 @@ const router = createBrowserRouter([
 
       {
         path: "dashboard",
-        element: <UserDashBoardPage />
+        element: <UserDashBoardPage />,
       },
       {
         path: "browseProduct",
-        element: <AllProductPage />
+        element: <AllProductPage />,
       },
       {
         path: "cart",
-        element: <ShopingCartPage />
-      }
+        element: <ShopingCartPage />,
+      },
+      {
+        path: "checkout",
+        element: <CheckoutPage />,
+      },
 
-      
+      {
+        path: "shipping",
+        element: <Shipping />,
+      },
+      {
+        path: "payment",
+        element: <Payment />,
+      },
+      {
+        path: "review",
+        element: <Review />,
+      },
+      {
+        path: "Confirmation",
+        element: <Confirmation />,
+      },
     ],
   },
-  
 ]);
 
 export default router;

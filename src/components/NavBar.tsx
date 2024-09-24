@@ -42,7 +42,7 @@ const NavBar = ({ showFullNav }: Props) => {
           <img src={logo} alt="QuickSellLogo" className="w-[140px] h-24" />
         </Link>
 
-        {showFullNav && (
+        {/* {showFullNav && ( */}
           <>
             <ul className="hidden lg:flex lg:flex-row lg:space-x-16">
               <Link to="/home" className="list-item hover:underline font-bold">
@@ -95,7 +95,7 @@ const NavBar = ({ showFullNav }: Props) => {
               )}
             </div>
           </>
-        )}
+        {/* // )} */}
       </div>
       <hr />
     </>
