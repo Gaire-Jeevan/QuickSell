@@ -15,6 +15,7 @@ import UserProfilePage from "../pages/UserProfile/UserProfilePage";
 import UserDashBoardPage from "../pages/userDashboard/UserDashBoardPage";
 import ErrorPage from "./ErrorPage";
 import ProtectedRoute from "./ProtectedRoute";
+import BrowseProductPage from "../pages/BrowseProduct/BrowseProductPage";
 // Import the new ProtectedRoute component
 
 const router = createBrowserRouter([
@@ -49,7 +50,7 @@ const router = createBrowserRouter([
       },
       {
         path: "browseProduct",
-        element: <AllProductPage />,
+        element: <BrowseProductPage />,
       },
       {
         path: "cart",
