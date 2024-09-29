@@ -1,4 +1,3 @@
-import React from "react";
 import sofa from "../../assets/sofaSet.png";
 
 import { FaStar } from "react-icons/fa";

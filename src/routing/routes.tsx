@@ -16,6 +16,7 @@ import UserDashBoardPage from "../pages/userDashboard/UserDashBoardPage";
 import ErrorPage from "./ErrorPage";
 import ProtectedRoute from "./ProtectedRoute";
 import BrowseProductPage from "../pages/BrowseProduct/BrowseProductPage";
+import ProductDetailPage from "../pages/BrowseProduct/ProductDetailPage";
 // Import the new ProtectedRoute component
 
 const router = createBrowserRouter([
@@ -74,9 +75,13 @@ const router = createBrowserRouter([
         element: <Review />,
       },
       {
-        path: "Confirmation",
+        path: "confirmation",
         element: <Confirmation />,
       },
+      {
+        path: "productDetail",
+        element: <ProductDetailPage />
+      }
     ],
   },
 ]);

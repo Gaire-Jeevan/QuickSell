@@ -1,10 +1,9 @@
-import React from "react";
 import { CiSearch } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa";
-import { MdFilterList, MdOutlineTune } from "react-icons/md";
-import ProductCard from "../../pages/BrowseProduct/productCard";
-import NavBar from "../../components/NavBar";
+import { MdOutlineTune } from "react-icons/md";
 import Footer from "../../components/Footer";
+import NavBar from "../../components/NavBar";
+import ProductCard from "../../pages/BrowseProduct/productCard";
 
 const BrowseProductPage = () => {
   // categories array for checkbox
