@@ -8,7 +8,7 @@ import Shipping from "../pages/CheckOut/Shipping";
 import ContactUsPage from "../pages/ContactUs/ContactUsPage";
 import HomePage from "../pages/HomePage/HomePage";
 import LogInPage from "../pages/Login/LogInPage";
-import AllProductPage from "../pages/ProductForSell/AllProductPage";
+import AllProductPage from "../pages/MyListing/AllProductPage";
 import ShopingCartPage from "../pages/ShoppigCart/ShopingCartPage";
 import SignUpPage from "../pages/SignUp/SignUpPage";
 import UserProfilePage from "../pages/UserProfile/UserProfilePage";
@@ -81,6 +81,9 @@ const router = createBrowserRouter([
       {
         path: "productDetail",
         element: <ProductDetailPage />
+      }, {
+        path: "sellProducts",
+        element: <AllProductPage />
       }
     ],
   },
