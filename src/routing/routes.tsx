@@ -17,6 +17,7 @@ import ErrorPage from "./ErrorPage";
 import ProtectedRoute from "./ProtectedRoute";
 import BrowseProductPage from "../pages/BrowseProduct/BrowseProductPage";
 import ProductDetailPage from "../pages/BrowseProduct/ProductDetailPage";
+import WishListPage from "../pages/WishList/WishListPage";
 // Import the new ProtectedRoute component
 
 const router = createBrowserRouter([
@@ -80,11 +81,16 @@ const router = createBrowserRouter([
       },
       {
         path: "productDetail",
-        element: <ProductDetailPage />
-      }, {
+        element: <ProductDetailPage />,
+      },
+      {
         path: "sellProducts",
-        element: <AllProductPage />
-      }
+        element: <AllProductPage />,
+      },
+      {
+        path: "myWishlist",
+        element: <WishListPage />,
+      },
     ],
   },
 ]);
